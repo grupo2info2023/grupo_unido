@@ -17,35 +17,3 @@ class ContactoUsuario(CreateView):
     def form_valid(self, form):
         messages.success(self.request, 'Consulta enviada.')
         return super().form_valid(form)
-
-        
-
-
-# def contacto(request):
-#     data = {'form': ContactoForm()}
-
-#     if request.method == 'POST':
-#         formulario = ContactoForm(data=request.POST)
-#         if formulario.is_valid():
-#             formulario.save()
-#             messages.success(request, 'Consulta enviada')
-#         else:
-#             data['form'] = formulario
-    
-#     return render(request, 'contacto.html', data)
-
-    # if request.method == 'POST':
-    #     form = ContactoForm(request.POST)
-    #     if form.is_valid():
-    #         form.save()
-    #         asunto = 'Confirmación de contacto'
-    #         mensaje = 'Gracias por contactarnos. Hemos recibido tu mensaje correctamente.'
-    #         desde_email = 'tu_correo@example.com'
-    #         mail_contacto = [form.cleaned_data['email']]  # El destinatario es la dirección de correo electrónico ingresada en el formulario
-
-    #         send_mail(asunto, mensaje, desde_email, mail_contacto)
-    #         return render(request, 'mensaje_enviado.html')
-    #     else:
-    #         form = ContactoForm()
-
-    # return render(request, 'contacto.html', {'form': form})
