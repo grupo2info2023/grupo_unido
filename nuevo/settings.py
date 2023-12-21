@@ -6,11 +6,13 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Recuerden que tiene que poner su SECRET_KEY acá
-
+#SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
+#Este es MI secret key, uds tienen que usar el suyo
 
 DEBUG = False
 
 ALLOWED_HOSTS = ['nombre.pythonanywhere.com']
+#acá tienen que poner su nombre de pythonanywhere
 
 DATABASES = {
     'default': {
@@ -126,8 +128,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static',]
 STATIC_ROOT = 'home/nombre/repo1/static'
+#acá tienen que poner su ruta 
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'home/nombre/repo1/media'
+#acá tienen que poner su ruta 
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
