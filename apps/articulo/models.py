@@ -15,7 +15,7 @@ class Articulo(models.Model):
     fecha_publicacion = models.DateTimeField(auto_now_add=True)
     activo = models.BooleanField(default=True)
     categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
-    imagen = models.ImageField(null=True, blank=True, upload_to='media', default='post_default.png')
+    imagen = models.ImageField(null=True, blank=True, upload_to='media/articulo', default='post_default.png')
     publicado = models.DateTimeField(default=timezone.now)
     editor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
 
