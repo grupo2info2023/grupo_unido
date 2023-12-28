@@ -14,7 +14,7 @@
             <div class="col-lg-5 mt-5">
                 <div class="card mb-3">
                     {% if articulos.imagen %}
-                        <img class="card-img img-fluid" src="{{ articulos.imagen.url }}" alt="">
+                        <img class="card-img img-fluid" src="{{ articulos.image.url }}" alt="">
                     {% else %}
                         <img class="img-fluid" src="{% static '/assets/img/banner_img_01.jpg' %}" alt="">
                     {% endif %}
