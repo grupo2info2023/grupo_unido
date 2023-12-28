@@ -26,15 +26,6 @@ class Articulo(models.Model):
         return self.titulo
 
 
-class Image(models.Model):
-    articulo = models.ForeignKey(Articulo, on_delete=models.CASCADE, related_name='images')
-    image = models.ImageField(null=True, blank=True, upload_to='articulo', default='articulo/post_default.png')
-
-    def delete(self, using=None, keep_parents=False):
-        self.image.delete()
-        super().delete(using=using, keep_parents=keep_parents)
-
-
 
 
 
