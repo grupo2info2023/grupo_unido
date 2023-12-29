@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 #SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
 #Este es MI secret key, uds tienen que usar el suyo
 
-DEBUG = False
+DEBUG = FALSE
 
 ALLOWED_HOSTS = ['nombre.pythonanywhere.com']
 #acá tienen que poner su nombre de pythonanywhere
