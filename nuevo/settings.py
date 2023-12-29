@@ -127,12 +127,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static',]
-STATIC_ROOT = 'home/nombre/repo1/static'
+STATIC_ROOT = '/home/nombre/repo1/staticfiles'
 #acá tienen que poner su ruta 
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = 'home/nombre/repo1/media'
+MEDIA_ROOT = '/home/nombre/repo1/media'
 #acá tienen que poner su ruta 
 
 
