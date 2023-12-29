@@ -6,6 +6,6 @@ from .models import Categoria, Articulo
 @admin.register(Articulo)
 class ArticuloAdmin(admin.ModelAdmin):
     list_display = ('id', 'titulo', 'resumen', 'contenido', 'fecha_publicacion',
-                    'activo', 'categoria', 'imagen', 'publicado', 'editor')
+                    'activo', 'categoria', 'image', 'publicado', 'editor')
 
 admin.site.register(Categoria)
