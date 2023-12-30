@@ -6,7 +6,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Recuerden que tiene que poner su SECRET_KEY acá
-#SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
+SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
 #Este es MI secret key, uds tienen que usar el suyo
 
 DEBUG = True
