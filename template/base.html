@@ -63,7 +63,7 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                            <a class="nav-link" href="c">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'index' %}">Acerca de</a>
@@ -154,10 +154,10 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Páginas</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
-                        <li><a class="text-decoration-none" href="#">Acerca de nosotros</a></li>
-                        <li><a class="text-decoration-none" href="#">Artículos</a></li>
-                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'index' %}">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca De</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'apps.articulo:articulos' %}">Artículos</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'contacto' %}">Contacto</a></li>
                     </ul>
                 </div>
 
@@ -213,7 +213,7 @@
                         <p class="text-left text-light">
                             Agradecimiento Especial al Profesor Diego Vargas &nbsp;&nbsp;&nbsp;&nbsp;
                             Informatorio &copy; Chaco
-                            | Diseñado por <a rel="sponsored" href="#" target="_blank">Grupo 2 - Comisión 2 -2023</a>
+                            | Diseñado por <a rel="sponsored" href="#" >Grupo 2 - Comisión 2 -2023</a>
                         </p>
                     </div>
                 </div>
