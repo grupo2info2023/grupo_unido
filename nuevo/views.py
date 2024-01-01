@@ -5,4 +5,4 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 def acerca(request):
-    return render(request 'acerca.html')
+    return render(request, 'acerca.html')
