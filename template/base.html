@@ -24,7 +24,6 @@
 -->
 </head>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17"></script>
-<body>
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
@@ -52,7 +51,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h2 align-self-center" href="{% url 'index' %}">
-                Tec-Info
+                <strong>Tec-Info</strong>
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,10 +153,10 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Páginas</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
-                        <li><a class="text-decoration-none" href="#">Acerca de nosotros</a></li>
-                        <li><a class="text-decoration-none" href="#">Artículos</a></li>
-                        <li><a class="text-decoration-none" href="#">Contacto</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'index' %}">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="#">Acerca De</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'apps.articulo:articulos' %}">Artículos</a></li>
+                        <li><a class="text-decoration-none" href="{% url 'contacto' %}">Contacto</a></li>
                     </ul>
                 </div>
 
@@ -213,7 +212,7 @@
                         <p class="text-left text-light">
                             Agradecimiento Especial al Profesor Diego Vargas &nbsp;&nbsp;&nbsp;&nbsp;
                             Informatorio &copy; Chaco
-                            | Diseñado por <a rel="sponsored" href="#" target="_blank">Grupo 2 - Comisión 2 -2023</a>
+                            | Diseñado por <a rel="sponsored" href="#" >Grupo 2 - Comisión 2 -2023</a>
                         </p>
                     </div>
                 </div>
