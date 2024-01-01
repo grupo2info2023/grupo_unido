@@ -2,6 +2,8 @@
 {% load static %}
 {% load colaborador_tags %}
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 <title> {% block title %} Categorías {% endblock title %} </title>
 {% block contenido %}
 <section class="container py-5">
@@ -15,7 +17,7 @@
     </div>
     <div class="row">
         {% for categoria in categorias %}
-        <div class="col-md-12 p-5">
+        <div class="p-4 m-2 border" style="width: auto;">
             <h4 class="text-center mt-3 mb-3">{{ categoria.nombre | capfirst }}</h4>
                 <p class="text-center"><a class="btn btn-success" href="{% url 'apps.articulo:articulos_por_categoria' pk=categoria.pk %}">Ingresá</a></p>
             {% if user.is_superuser or request.user|has_group:"Colaborador"  %}
@@ -25,6 +27,19 @@
             <h3 class="text-center mt-3 mb-3">No hay categorías</h3>
         {% endfor %}
         </div>
+
+        <!-- <div class="p-4 m-2 border " style="width: auto;">
+            <h4 class="text-center mt-3 mb-3">categoria 1</h4>
+                <p class="text-center"><a class="btn btn-success" href="{% url 'apps.articulo:articulos_por_categoria' pk=categoria.pk %}">Ingresá</a></p>
+                <p class="text-center"><a class="btn btn-warning" href="{% url 'apps.articulo:categoria_delete' pk=categoria.pk %}">Eliminar</a></p>
+        </div>
+        <div class="p-4 m-2 border " style="width: auto;">
+            <h4 class="text-center mt-3 mb-3">categoria 2</h4>
+                <p class="text-center"><a class="btn btn-success" href="{% url 'apps.articulo:articulos_por_categoria' pk=categoria.pk %}">Ingresá</a></p>
+                <p class="text-center"><a class="btn btn-warning" href="{% url 'apps.articulo:categoria_delete' pk=categoria.pk %}">Eliminar</a></p>
+        </div> -->
+        
+        
     </div>
 </section>
 {% endblock %}
