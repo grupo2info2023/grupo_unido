@@ -1,5 +1,8 @@
 from django.views.generic import TemplateView
-
+from django.shortcuts import render
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+def acerca(request):
+    return render(request 'acerca.html')
