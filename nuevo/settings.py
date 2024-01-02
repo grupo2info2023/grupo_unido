@@ -131,12 +131,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static',]
-STATIC_ROOT = '/home/nombre/grupo_unido/staticfiles'
+STATIC_ROOT = '/home/TecInfo/grupo_unido/staticfiles'
 #acá tienen que poner su ruta 
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/nombre/grupo_unido/media'
+MEDIA_ROOT = '/home/TecInfo/grupo_unido/media'
 #acá tienen que poner su ruta 
 
 
