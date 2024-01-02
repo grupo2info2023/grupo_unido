@@ -1,12 +1,10 @@
-import os
-import sys
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Recuerden que tiene que poner su SECRET_KEY acá
-#SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
+SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
 #Este es MI secret key, uds tienen que usar el suyo
 
 DEBUG = False
@@ -132,12 +130,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static',]
 STATIC_ROOT = '/home/TecInfo/grupo_unido/staticfiles'
-#acá tienen que poner su ruta 
+#acá tienen que poner su ruta
 
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/home/TecInfo/grupo_unido/media'
-#acá tienen que poner su ruta 
+#acá tienen que poner su ruta
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
