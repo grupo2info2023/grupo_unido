@@ -6,18 +6,22 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Recuerden que tiene que poner su SECRET_KEY acá
-SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
+#SECRET_KEY = 'django-insecure--yxk&3m2v6yqr$6h7!%3yq)&3dt^r9-gc3dd&zq$nx5@5nmxg)'
 #Este es MI secret key, uds tienen que usar el suyo
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['TecInfo.pythonanywhere.com']
 #acá tienen que poner su nombre de pythonanywhere
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'TecInfo$default',
+        'USER': 'TecInfo',
+        'PASSWORD': 'contraseña',
+        'HOST': 'TecInfo.mysql.pythonanywhere-services.com',
+        'PORT': '',
     }
 }
 
@@ -126,8 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static',]
-STATIC_ROOT = '/home/nombre/repo1/staticfiles'
+STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR),'static'),)
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 #acá tienen que poner su ruta 
 
 
