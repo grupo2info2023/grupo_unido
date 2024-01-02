@@ -45,8 +45,8 @@
                             <p>Permanecer leyendo es aburrido? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 Inicia sesión o regístrate para poder acceder a comentar, publicar y editar los artículos de la web.
                             </p>
-                            <a href="{% url 'apps.usuario:login' %}?next={{ request.path }}"><button type="submit">Iniciar Sesión</button></a> &nbsp;
-                            <a href="{% url 'apps.usuario:registrar' %}?next={{ request.GET.next }}"><button type="submit">Registrarse</button></a>
+                            <a href="{% url 'apps.usuario:login' %}?next={{ request.path }}" class="btn btn-success btn-lg" >Iniciar Sesión</a> &nbsp;
+                            <a href="{% url 'apps.usuario:registrar' %}?next={{ request.GET.next }}" class="btn btn-success btn-lg" >Registrarse</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                             <p>
                                 Lee, aprende e interactua acerca con las noticias e invensiones que nuestros miembros han subido recientemente. Conoce más acerca de ellos y expande tu conocimiento.
                             </p>
-                            <a href="{% url 'apps.articulo:articulos' %}"><button type="submit">Artículos</button></a>
+                            <a href="{% url 'apps.articulo:articulos' %}" class="btn btn-success btn-lg">Artículos</a>
                         </div>
                     </div>
                 </div>

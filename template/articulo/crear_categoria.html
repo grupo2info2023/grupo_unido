@@ -5,7 +5,7 @@
 <center>
 
 <div class='main-container' style="text-align: center; margin-top: 12%; margin-bottom: 12%;"></div>
-        <h1>Agregar nueva categoría</h1>
+        <h1>Agregar Nueva Categoría</h1>
         <form method="post">
         {% csrf_token %}
         {{ form | crispy }}
@@ -13,7 +13,7 @@
     </form>
     <div class="container-fluid" style="margin-top: 300px;">
         <a class="btn btn-success" 
-        href="{% url 'apps.articulo:categoria_lista' %}">Listar todas las categorias</a>
+        href="{% url 'apps.articulo:categoria_lista' %}">Listar todas las categorías</a>
     </div>
 </div>
 </center>
